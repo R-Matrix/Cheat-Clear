@@ -69,10 +69,13 @@ dependencies {
 //	fabricApiModules.forEach {
 //		include(autoImplementation(fabricApi.module(it, project.fabric_api_version)))
 //	}
+
+	include autoImplementation("net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}")
+
 //	include(autoImplementation("me.fallenbreath:conditional-mixin-fabric:${project.conditionalmixin_version}"))
-//	if (mcVersion < 12005) {
-//		include("io.github.llamalad7:mixinextras-fabric:${project.mixinextras_version}")
-//	}
+	if (mcVersion < 12005) {
+		include("io.github.llamalad7:mixinextras-fabric:${project.mixinextras_version}")
+	}
 }
 
 String MIXIN_CONFIG_PATH = 'template_mod.mixins.json'

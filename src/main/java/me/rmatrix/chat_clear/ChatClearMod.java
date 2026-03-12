@@ -18,12 +18,11 @@
  * along with TemplateMod.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package me.fallenbreath.template_mod;
+package me.rmatrix.chat_clear;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.metadata.ModMetadata;
-
 //#if MC >= 1.18.2
 //$$ import com.mojang.logging.LogUtils;
 //$$ import org.slf4j.Logger;
@@ -32,7 +31,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 //#endif
 
-public class TemplateMod implements ModInitializer
+public class ChatClearMod implements ModInitializer
 {
 	public static final Logger LOGGER =
 			//#if MC >= 11802
@@ -41,9 +40,9 @@ public class TemplateMod implements ModInitializer
 			LogManager.getLogger();
 			//#endif
 
-	public static final String MOD_ID = "template_mod";
-	public static String MOD_VERSION = "unknown";
-	public static String MOD_NAME = "unknown";
+	public static final String MOD_ID = "chat_clear";
+	public static String MOD_VERSION = "1.0.0";
+	public static String MOD_NAME = "Chat-Clear";
 
 	@Override
 	public void onInitialize()
