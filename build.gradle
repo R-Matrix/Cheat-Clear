@@ -23,7 +23,6 @@ preprocess {
 	def mc1218 = createNode('1.21.8', 1_21_08, '')
 	def mc12110 = createNode('1.21.10', 1_21_10, '')
 	def mc12111 = createNode('1.21.11', 1_21_11, '')
-	def mc260100 = createNode('26.1', 26_01_00, '')
 
 	mc1206.link(mc1211, null)
 	mc1211.link(mc1213, null)
@@ -32,7 +31,6 @@ preprocess {
 	mc1215.link(mc1218, null)
 	mc1218.link(mc12110, null)
 	mc12110.link(mc12111, null)
-	mc12111.link(mc260100, null)
 
 	// See https://github.com/Fallen-Breath/fabric-mod-template/blob/1d72d77a1c5ce0bf060c2501270298a12adab679/build.gradle#L55-L63
 	for (final def node in getNodes()) {
